@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="CSS/Contact_html.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h2>Contact Form</h2>
+        <form action="/Home.html" method="get">
+            <label for="myn">Name :</label>
+            <input type="text" name="myname" id="myn" placeholder="Enter your name" required> <br><br>
+
+            <label for="em">Email :</label>
+            <input type="email" name="email" id="em" placeholder="Enter your email" required pattern="[0-9A-Za-z\-]+@[0-9A-Za-z\-]+\.[a-z]{2,}$"><br><br>
+
+            <label for="ps">Password :</label>
+            <input type="Password" name="Pswd" id="Pswd" placeholder="Enter your password" required><br><br>
+
+            <label for="phno">Phone no :</label>
+            <input type="text" name="Phone no" id="phno" pattern="[0-9]{10}" placeholder="Enter your phone no" required><br><br>
+
+             <label for="sub">Subject:</label>
+             <input type="text" name="sub" id="sub" required><br><br>
+
+            <label for="message">Message:</label>
+            <textarea type="message" name="message" id="message"></textarea><br><br>
+            <div class="checkbox-group">
+                 <Label for="select a course">Select a course :</Label>
+                 <input type="checkbox" name="course" value="FSD" required>FSD
+                 <input type="checkbox" name="course" value="DSML">DSML
+                <input type="checkbox" name="course" value="Java">Java <br><br>
+           </div>
+           <div class="radio-group">
+               <label for="gender">Select a gender :</label>
+               <input type="radio" name="gender" value="Female">Female
+               <input type="radio" name="gender" value="Male">Male <br><br>
+           </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    
+</body>
+</html>
